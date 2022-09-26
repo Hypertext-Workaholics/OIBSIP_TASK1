@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tempconvertor.css">
+</head>
+ 
+<body>
+    <div class="text">
+        <h1>Temperature:-</h1>
+        <br>
+        <p>Temperature, measure of hotness or coldness expressed in terms of any of several arbitrary scales and
+            indicating the direction in which heat energy will spontaneously flow—i.e., from a hotter body (one at a
+            higher temperature) to a colder body (one at a lower temperature).</p>
+        <br>
+        <p>
+            Three temperature scales are in general use today. The Fahrenheit (°F) temperature scale is used in the
+            United States and a few other English-speaking countries. The Celsius (°C) temperature scale is standard in
+            virtually all countries that have adopted the metric system of measurement, and it is widely used in the
+            sciences. The Kelvin (K) scale, an absolute temperature scale (obtained by shifting the Celsius scale by
+            −273.15° so that absolute zero coincides with 0 K), is recognized as the international standard for
+            scientific temperature measurement.
+        </p>
+    </div>
+ 
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="calculator">
+            <div>
+                <label for="celsius">Celsius</label>
+                <input id="celsius" type="text" placeholder="Enter Celsius">
+ 
+                <button class="button" onclick="convertFahrenheit()">Convert Fahrenheit</button>
+ 
+            </div>
+ 
+            <div>
+ 
+                <label for="fahrenheit">Fahrenheit</label>
+                <input id="fahrenheit" type="text" placeholder="Enter Fahrenheit">
+ 
+                <button class="button" onclick="convertCelsius()">Convert Celsius</button>
+            </div>
+ 
+        </div>
+ 
+        <br>
+        <br>
+        <button class="button" onclick="reset()">reset</button>
+    </div>
+    <script src="tempconvertor.js"></script>
+ 
+    <div class="zone blue grid-wrapper">
+        <div class="text">
+            <h1>Celsius To Fahrenheit Conversion:-</h1>
+            <br>
+            <p> <u>Formule:</u> °F = (°C × 9/5) + 32.</p>
+        </div>
+ 
+        <div class="text">
+            <h1>Fahrenheit To Celsius Conversion:-</h1>
+            <br>
+            <p> <u>Formule:</u> °C = 5/9 x (°F - 32)</p>
+        </div>
+ 
+    </div>
+ 
+    <div class="zone blue grid-wrapper">
+        <div class="text">
+            <h1>Celsius:-</h1>
+            <p>The Celsius (symbol: °C) is an SI (International System of Units) derived unit of temperature. It is
+                defined based on the SI unit of temperature, the kelvin. The Celsius and Kelvin scales are precisely
+                related, with a one-degree change in Celsius being equal to a one degree-change in kelvin. The kelvin
+                (and thus Celsius) is defined based on the Boltzmann constant, k, which equals 1.380649 × 10-23 when
+                expressed in the unit J·K-1, a unit equivalent to kg·m2·s-2·K-1. The kilogram, meter, and second, are
+                defined based on Planck's constant, h, the speed of light, c, and cesium frequency, ΔνCs.</p>
+            <br>
+        </div>
+ 
+        <div class="text">
+            <h1>Farenheit :-</h1>
+            <p>The Fahrenheit (symbol: °F) is a unit of temperature that was widely used prior to metrication. It is
+                currently defined by two fixed points: the temperature at which water freezes, 32°F, and the boiling
+                point of water, 212°F, both at sea level and standard atmospheric pressure. The interval between the
+                freezing and boiling point is divided into 180 equal parts.</p>
+        </div>
+ 
+    </div>
+ 
+</body>
+ 
+</html>
